@@ -145,6 +145,7 @@ var callOptions = {
  });
 
 
+
  // Put app into 'updating' state
    function setUpForUpdate(id) {
      // Set the flag
