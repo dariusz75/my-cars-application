@@ -34,7 +34,7 @@ function removeCar(id) {
   var i = _cars.findIndex(function(car){
     return id === car._id;
   });
-  _car.splice(i, 1);
+  _cars.splice(i, 1);
 }
 
 function updateCar(car, data) {
@@ -130,9 +130,9 @@ var callOptions = {
  $carsList.on('click.delete', '.delete', function(e) {
    // Find the ID
    var carID = $(this).data('id');
-
+console.log('carID', carID);
    $.ajax({
-     url: HOSTNAME + '/cars' + carID,
+     url: HOSTNAME + '/cars/' + carID,
      method: 'DELETE',
    })
    .done(function() {
