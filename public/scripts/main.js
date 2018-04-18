@@ -1,7 +1,7 @@
 
 $(function(){
 
-var HOSTNAME = '//localhost:3000';
+var HOSTNAME = 'mongodb://dariusz:kalmar77@ds247439.mlab.com:47439/heroku_0t02lv7m';
 
 var updating = false;
 var carToBeUpdeted = null;
