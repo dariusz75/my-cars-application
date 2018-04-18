@@ -3,7 +3,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var PORT = process.env.PORT || 3000;
-var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/first_cars';
+var MONGODB_URI = process.env.MONGODB_URI || 'mongodb://dariusz:kalmar77@ds247439.mlab.com:47439/heroku_0t02lv7m';
 
 console.log(MONGODB_URI);
 
@@ -31,6 +31,7 @@ var Schema = mongoose.Schema;
 var carSchema = new Schema({
   make:  String,
   bhp: Number,
+  year: Number,
 });
 
 // MODEL
