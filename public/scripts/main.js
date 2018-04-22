@@ -1,7 +1,7 @@
 
 $(function(){
 
-var HOSTNAME = 'mongodb://dariusz:dariusz@ds247439.mlab.com:47439/heroku_0t02lv7m';
+var HOSTNAME = window.location.origin;
 
 var updating = false;
 var carToBeUpdeted = null;
@@ -158,6 +158,7 @@ console.log('carID', carID);
      // Put current values into the form inputs
      $makeInput.val(carToBeUpdated.make);
      $bhpInput.val(carToBeUpdated.bhp);
+     $yearInput.val(carToBeUpdated.year);
 
      // Change form title and submit button text to match
      $formTitle.text('Update ' + carToBeUpdated.make);
